@@ -2,6 +2,8 @@
 
 Unleash browser extension. Easily see notifications and feature toggles on your browser.
 
+Currently supports Unleash Enterprise v4.22 or above.
+
 https://user-images.githubusercontent.com/14320932/223819417-413a5877-6754-46ce-9f90-4c5dd96c99f0.mp4
 
 ## Getting Started
@@ -27,7 +29,6 @@ For Firefox, you can follow these steps:
 4. You should now see the extension in Firefox.
 
 For other browsers, we recommend following the appropriate browser documentation on how to add a browser extension to that particular browser.
-
 
 ### 🔧 Settings
 

@@ -69,7 +69,7 @@ const save = async () => {
 
     $q.notify({
       message:
-        'Unable to validate settings. Make sure you are using Unleash v4.22 or above' +
+        'Unable to validate settings. Make sure you are using Unleash Enterprise v4.22 or above' +
         (token.value ? '.' : ' and you are currently logged in.'),
       type: 'negative',
     })
