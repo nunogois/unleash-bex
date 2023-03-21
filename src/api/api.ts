@@ -4,6 +4,7 @@ import {
   IProject,
   IProjectBase,
   IEnvironment,
+  IToggle,
 } from 'src/api/models'
 
 export const api = (url: string, token: string) => {
@@ -50,6 +51,14 @@ export const api = (url: string, token: string) => {
     }
   }
 
+  const fetchToggle = async (
+    project: string,
+    feature: string
+  ): Promise<IToggle> =>
+    $axios
+      .get(`/api/admin/projects/${project}/features/${feature}`)
+      .then(({ data }) => data as IToggle)
+
   const flipToggle = async (
     project: string,
     environment: string,
@@ -68,6 +77,7 @@ export const api = (url: string, token: string) => {
     markNotificationAsRead,
     fetchProjects,
     fetchProject,
+    fetchToggle,
     flipToggle,
   }
 }

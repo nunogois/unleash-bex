@@ -49,6 +49,10 @@ const session = useSession()
 </script>
 
 <style lang="sass">
+html, body
+  width: 400px
+  height: 500px
+
 a
   text-decoration: none
   color: inherit

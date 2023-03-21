@@ -1,6 +1,6 @@
 {
   "name": "unleash-bex",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Unleash browser extension. Easily see notifications and feature toggles on your browser.",
   "productName": "Unleash Browser Extension",
   "author": "Nuno Góis <github@nunogois.com>",
@@ -16,6 +16,7 @@
     "@quasar/extras": "^1.0.0",
     "axios": "^1.2.1",
     "events": "^3.3.0",
+    "jquery": "^3.6.4",
     "pinia": "^2.0.33",
     "quasar": "^2.6.0",
     "vue": "^3.0.0",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@quasar/app-vite": "^1.0.0",
+    "@types/jquery": "^3.5.16",
     "@types/node": "^12.20.21",
     "@typescript-eslint/eslint-plugin": "^5.10.0",
     "@typescript-eslint/parser": "^5.10.0",

@@ -22,6 +22,16 @@ const routes: RouteRecordRaw[] = [
       { path: '', component: () => import('src/pages/SettingsPage.vue') },
     ],
   },
+  {
+    path: '/tooltip',
+    component: () => import('layouts/MinimalLayout.vue'),
+    children: [
+      {
+        path: 'toggle',
+        component: () => import('src/pages/Tooltip/TogglePage.vue'),
+      },
+    ],
+  },
 
   // Always leave this as last one,
   // but you can also remove it

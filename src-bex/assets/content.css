@@ -1,1 +1,43 @@
 /* Global CSS used within your BEX. This is not preprocessed so this has to be pure CSS. */
+
+#unleash-bex-tooltip {
+  display: none;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  z-index: 99999;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 12px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+#unleash-bex-tooltip > iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.unleash-bex-link {
+  position: relative;
+  display: inline;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none !important;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.unleash-bex-link > img {
+  position: absolute;
+  top: 3px;
+  background-color: transparent !important;
+  width: 20px;
+  height: 20px;
+}
+
+.unleash-bex-link > span {
+  margin-left: 24px;
+}

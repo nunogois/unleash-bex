@@ -87,6 +87,12 @@ export default bexBackground((bridge /* , allActiveConnections */) => {
     })
   })
 
+  const session = LocalStorage.getItem('session') as ISession
+
+  if (session?.settings.valid) {
+    bridge.send('load', { session })
+  }
+
   bridge.on('update_read_notifications_badge', ({ data }) => {
     chrome.browserAction.setBadgeText({
       text: data > 0 ? data.toString() : '',

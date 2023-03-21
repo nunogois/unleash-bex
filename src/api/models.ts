@@ -23,14 +23,16 @@ export interface IProject extends Omit<IProjectBase, 'environments'> {
   environments: IEnvironment[]
 }
 
+export interface IToggleEnvironment {
+  name: string
+  enabled: boolean
+}
+
 export interface IToggle {
   name: string
   type: string
   createdAt: string
-  environments: {
-    name: string
-    enabled: boolean
-  }[]
+  environments: IToggleEnvironment[]
 }
 
 export interface IEnvironment {
