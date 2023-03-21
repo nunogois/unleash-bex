@@ -2,7 +2,7 @@
 
 Unleash browser extension. Easily see notifications and feature toggles on your browser.
 
-Currently supports Unleash Enterprise v4.22 or above.
+Currently supports [Unleash Enterprise v4.22](https://www.getunleash.io/plans) or above.
 
 https://user-images.githubusercontent.com/14320932/223819417-413a5877-6754-46ce-9f90-4c5dd96c99f0.mp4
 
@@ -69,6 +69,14 @@ Control your feature toggles and quickly toggle a feature on or off. You can sel
 The [change requests](https://docs.getunleash.io/reference/change-requests) feature is currently not supported on this browser extension. In case you try to toggle a feature on a project that has change requests enabled for an environment, you'll see a tooltip with more information:
 
 ![image](https://user-images.githubusercontent.com/14320932/223825564-1aecc9e1-d768-48dd-b242-576cc45e0d24.png)
+
+### 👀 Tooltips
+
+<img width="519" alt="image" src="https://user-images.githubusercontent.com/14320932/226730558-1f33ff8f-aae5-42bf-87f0-982692d7a187.png">
+
+Improve interactivity whenever you encounter a link to your Unleash instance while browsing. Easily see the current state of a feature toggle for a specific environment and toggle it right from the tooltip.
+
+**Note**: Currently only links to feature toggles are supported.
 
 ## 👨‍💻 Development
 
